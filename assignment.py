@@ -3,7 +3,7 @@ import os
 import json
 import pandas as pd
 import plotly.express as px
-import datetime
+from datetime import datetime, timedelta
  
 # Global Variables
 json_file = 'credentials.json'

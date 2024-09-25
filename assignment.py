@@ -39,7 +39,7 @@ def login_signup_page():
     if option == 'Sign Up':
         name = st.text_input('Name')
         phone = st.text_input('Phone')
-        dob = st.date_input('Date of Birth')
+        dob = st.date_input('Date of Birth',min_value = datetime.today() - timedelta(days=365*100),max_value = datetime.today())
         email = st.text_input('Email')
         password = st.text_input('Password', type='password')
  
